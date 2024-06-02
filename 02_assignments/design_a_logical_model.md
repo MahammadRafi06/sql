@@ -15,7 +15,7 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
-Your answer...
+type1 architectures update the existing address so the historical information is lost every time there's an update. On the other hand, if we implement type2 with version effective date and version expiry date, we can have historical data but we need to compromise on the query speed. Yes there're privacy implications. Any user should have access to minimum access to data, in our case to process an order the bookstore needs customer current address but in type2 implementation, bookstore can access the whole address timeline for any customer.  
 ```
 
 ## Question 4
@@ -23,7 +23,9 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
-Your answer...
+1. In the given diagram cardinality is missing
+2. The relationships are defined unidirectionally
+3. My EDR does not have Unique Constrains enforced
 ```
 
 # Criteria
